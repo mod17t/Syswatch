@@ -1,6 +1,12 @@
-import get_usage
-import alert
-import report
+import sys
+try:    
+    import get_usage
+    import alert
+    import report
+except ModuleNotFoundError:
+    print("Module psutil non installer")
+    print("Veuillez installer psutils avec la commande :'pip install psutil'")
+    sys.exit()
 
 if __name__ == "__main__":
 

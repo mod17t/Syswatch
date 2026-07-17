@@ -1,8 +1,4 @@
-try:
-    import psutil
-except ModuleNotFoundError:
-    print("Module psutil non installer")
-    print("Veuillez installer psutils avec la commande :'pip install psutil'")
+import psutil
 
 def get_cpu_usage():
     return psutil.cpu_percent(interval=2)
