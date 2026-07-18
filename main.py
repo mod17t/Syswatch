@@ -4,9 +4,9 @@ try:
     import alert
     import report
 except ModuleNotFoundError:
-    print("Module psutil non installer")
-    print("Veuillez installer psutils avec la commande :'pip install psutil'")
-    sys.exit()
+    print("Module psutil non installé")
+    print("Veuillez installer psutil avec la commande :'pip install psutil'")
+    sys.exit(1)
 
 if __name__ == "__main__":
 
