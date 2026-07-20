@@ -7,8 +7,8 @@ def generate_report(current):
     #creations du repertoire reports s'il n'existe pas encore
     os.makedirs("reports", exist_ok=True)
     #creation du fichier de rapports
-    with open(f"reports/report_{now.strftime("%Y-%m-%d_%H-%M-%S")}.txt", "w", encoding="utf-8") as f:
-        f.write(f"Rapport généré le {now.strftime("%d/%m/%Y")} à {now.strftime("%H:%M:%S")} \n\n")
+    with open(f"reports/report_{now.strftime('%Y-%m-%d_%H-%M-%S')}.txt", "w", encoding="utf-8") as f:
+        f.write(f"Rapport généré le {now.strftime('%d/%m/%Y')} à {now.strftime('%H:%M:%S')} \n\n")
         f.write(f"La consommation du CPU est : {current['cpu']}  \n")
         f.write(f"La consommation de la RAM est : {current['ram']} \n")
         f.write(f"Les processus qui consomment le plus sont : \n")
