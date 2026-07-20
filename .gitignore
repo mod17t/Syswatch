@@ -6,4 +6,4 @@ __pycache__/
 .venv/
 
 # Fichiers générés par le programme
-report.txt
+reports/
