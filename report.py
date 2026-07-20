@@ -2,7 +2,6 @@ from datetime import datetime
 import os 
 
 def generate_report(current):
-    # la variable now va permettre de recuperer la date actuelle au format year-month-day_hours-minutes-seconds 
     now = datetime.now()
     #creations du repertoire reports s'il n'existe pas encore
     os.makedirs("reports", exist_ok=True)
